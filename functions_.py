@@ -31,7 +31,7 @@ def get_travel_info(city, fract):
     num_people_using_uber = population_per_compartment.copy()
     num_people_using_uber[3] = 0
     #Here we are assuming that the documented people are not the uber riders
-    num_people_using_uber = fraction_of_uber_customers * num_people_using_uber *        num_people_using_uber/num_people_using_uber.sum()
+    num_people_using_uber = fraction_of_uber_customers * num_people_using_uber * num_people_using_uber/num_people_using_uber.sum()
     
     travel_distribution_compartment = np.array(
         list(map(daily_travel, num_people_using_uber)))
@@ -72,7 +72,7 @@ def assign_new_ubers(new_ubers_in_service, passenger_compartment, mean_trip_len=
                 passenger_exposed +=1
         elif idx+1 > passenger_compartment[0] and idx+1 <= passenger_compartment[0] + passenger_compartment[1]:
             pass
-        elif idx+1 > passenger_compartment[0] + passenger_compartment[1] and idx+1 <=             passenger_compartment[0] + passenger_compartment[1] +            passenger_compartment[2]+passenger_compartment[3]:
+        elif idx+1 > passenger_compartment[0] + passenger_compartment[1] and idx+1 <= passenger_compartment[0] + passenger_compartment[1] + passenger_compartment[2]+passenger_compartment[3]:
             vehicle.infect()
             exposed_num += 1
         else:
