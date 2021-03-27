@@ -20,5 +20,5 @@ To Run
 
 Sample solution:
 A sample solution providing the daily number of infected people in a city.
-![plot](https://github.com/diwas07/Ride_hailing_disease_spread/blob/main/tenk_base_01.png)
+![plot](https://github.com/diwas07/Ride_hailing_disease_spread/blob/main/tenk_use.png)
  
