@@ -12,9 +12,9 @@ Contents
 5. instance_example: final code for actual implementation of the simulation model based on the specified parameters
 
 To Run
-1.Clone this repository
-2.Specify the necessary parameters in parameters.ipynb
-3. Run instance_exmaple
+a.Clone this repository
+b.Specify the necessary parameters in parameters.ipynb
+c. Run instance_exmaple
 
 Sample solution:
 A sample solution providing the daily number of infected people in a city.
