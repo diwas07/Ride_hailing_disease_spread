@@ -13,9 +13,7 @@ Contents
 
 To Run
 1.Clone this repository
-
 2.Specify the necessary parameters in parameters.ipynb
-
 3. Run instance_exmaple
 
 Sample solution:
