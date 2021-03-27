@@ -1,8 +1,8 @@
 #Ride_hailing_disease_spread
-This repository contains all implementations of "Spread of disease via ride hailing services”
+This repository contains all implementations of "Measuring the Large sacle Adoption of Ridesharing on the Spread of Infectious Disease”
 
 Dependencies
-Python>3.6 and Jupyter notebook>4
+Python>3.6 
 
 Contents
 1. parameters contains all the parameters necessary for simulation including the population size, number of ride hailing vehicles, number of zones in the city as well as the disease spread parameters. 
@@ -11,9 +11,10 @@ Contents
 4. main_: simulation code for SEIR model 
 5. instance_example: final code for actual implementation of the simulation model based on the specified parameters
 
+
 To Run
 a.Clone this repository
-b.Specify the necessary parameters in parameters.ipynb
+b.Specify the necessary parameters in parameters.py
 c. Run instance_exmaple
 
 Sample solution:
