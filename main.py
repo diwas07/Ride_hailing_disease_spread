@@ -29,7 +29,11 @@ def simulate_disease_spread():
 
     uber_divers_compartment = population_per_compartment/city.population*num_uber_divers
     uber_divers_compartment = uber_divers_compartment.astype(int)
-    driver_compartment = uber_divers_compartment[0]*[[1,0,0,0,0]]+                         uber_divers_compartment[1]*[[0,1,0,0,0]]+                         uber_divers_compartment[2]*[[0,0,1,0,0]]+                         uber_divers_compartment[3]*[[0,0,0,1,0]]+                         uber_divers_compartment[4]*[[0,0,0,0,1]]
+    driver_compartment = uber_divers_compartment[0]*[[1,0,0,0,0]]+     
+                         uber_divers_compartment[1]*[[0,1,0,0,0]]+                         
+                         uber_divers_compartment[2]*[[0,0,1,0,0]]+                         
+                         uber_divers_compartment[3]*[[0,0,0,1,0]]+                         
+                         uber_divers_compartment[4]*[[0,0,0,0,1]]
 
     uber_drivers = [Driver(driver_compartment[i]) for i in range(len(driver_compartment))]
     uber_vehicles = [Uber(num_periods_decay, uber_driver) 
