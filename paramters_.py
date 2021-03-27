@@ -26,7 +26,7 @@ num_immune = 0
 simulation_time = 100
 #fraction_uber = 1 #Fraction of the total population that uses uber to move
 #INIITIAL WAS 0.5
-population_size = num_susceptible + num_exposed + num_undocumented +     num_documented + num_immune
+population_size = num_susceptible + num_exposed + num_undocumented + num_documented + num_immune
 
 num_time_periods = 24# Time periods per day
 time_period_lenght = 60# Minutes in a time period
