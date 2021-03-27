@@ -33,7 +33,7 @@ class Zone:
                              self.num_immune]
 
         
-        self.population = num_susceptible + num_exposed + num_undocumented +            num_documented + num_immune
+        self.population = num_susceptible + num_exposed + num_undocumented + num_documented + num_immune
         self.dynamic_matrix = self._get_dynamic_matrix()
         self.memory = [[num_susceptible, num_exposed, num_undocumented, 
                         num_documented, num_immune]]
@@ -68,7 +68,7 @@ class Zone:
         new_state = np.matmul(current_state, self.dynamic_matrix)
         new_state = new_state.reshape(5,)
         
-        self.num_susceptible, self.num_exposed, self.num_undocumented,             self.num_documented, self.num_immune = new_state
+        self.num_susceptible, self.num_exposed, self.num_undocumented, self.num_documented, self.num_immune = new_state
         
         self.dynamic_matrix = self._get_dynamic_matrix()
         self.memory.append([self.num_susceptible, self.num_exposed, 
@@ -107,11 +107,11 @@ class Uber:
     def infect(self):
         self.time_to_recover = self.num_periods_decay
         self.infected = True
-        self.driver.susceptible, self.driver.exposed,            self.driver.undocumented, self.driver.documented,            self.driver.inmune = np.array([0,1,0,0,0], dtype = np.bool)
+        self.driver.susceptible, self.driver.exposed, self.driver.undocumented, self.driver.documented, self.driver.inmune = np.array([0,1,0,0,0], dtype = np.bool)
         
 class Driver:
     def __init__(self, compartment):
-        self.susceptible, self.exposed,            self.undocumented, self.documented,            self.inmune = np.array(compartment, dtype = np.bool)
+        self.susceptible, self.exposed, self.undocumented, self.documented, self.inmune = np.array(compartment, dtype = np.bool)
         
         self.compartment = np.array(compartment, dtype = np.int)
         self.infected = self.undocumented or self.documented
