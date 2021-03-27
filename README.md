@@ -1,4 +1,5 @@
-#Ride_hailing_disease_spread
+Ride_hailing_disease_spread
+
 This repository contains all implementations of "Measuring the Large sacle Adoption of Ridesharing on the Spread of Infectious Disease”
 
 Dependencies
